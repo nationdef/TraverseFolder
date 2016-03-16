@@ -8,9 +8,38 @@ public class FloderNode {
 	private int level;//层级
 	private List<FloderNode> node;//子节点
 	private boolean isFolder;
+	private long createTime;//创建时间
+	private long modifeTime;//修改时间
+	private long size;//大小byte
+	private String hashValue;// hash值
 	
 	
 	
+	
+	public long getCreateTime() {
+		return createTime;
+	}
+	public void setCreateTime(long createTime) {
+		this.createTime = createTime;
+	}
+	public long getModifeTime() {
+		return modifeTime;
+	}
+	public void setModifeTime(long modifeTime) {
+		this.modifeTime = modifeTime;
+	}
+	public long getSize() {
+		return size;
+	}
+	public void setSize(long size) {
+		this.size = size;
+	}
+	public String getHashValue() {
+		return hashValue;
+	}
+	public void setHashValue(String hashValue) {
+		this.hashValue = hashValue;
+	}
 	public boolean isFolder() {
 		return isFolder;
 	}
